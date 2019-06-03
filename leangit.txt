@@ -1,3 +1,64 @@
 
-Git is a version control system.
-Git is free software.
+
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+
+
+创建一个git目录
+
+
+在git目录下
+git init
+
+
+git add readme.txt
+
+
+git commit -m "add 3 files."
+
+
+git status
+
+
+git log
+git log --pretty=oneline
+
+
+git reset --hard HEAD^
+
+要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
+git reflog
+
+
+git remote add origin git@github.com:oldxing/learngit.git
+
+
+第一次
+git push -u origin master
+以后
+git push origin master
+
+
+
+
+Quick setup — if you’ve done this kind of thing before
+or	
+HTTPS
+SSH
+
+https://github.com/oldxing/learngit.git
+Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+
+…or create a new repository on the command line
+echo "# learngit" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/oldxing/learngit.git
+git push -u origin master
+…or push an existing repository from the command line
+git remote add origin https://github.com/oldxing/learngit.git
+git push -u origin master
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
