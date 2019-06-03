@@ -40,7 +40,79 @@ git push origin master
 
 
 
+gitskills
+https://github.com/oldxing/gitskills.git
 
+git clone https://github.com/oldxing/gitskills.git
+或者
+git clone git@github.com:oldxing/gitskills.git
+
+
+git checkout -b dev
+相当于以下两条命令：
+git branch dev
+git checkout dev
+
+
+git branch
+
+
+git add readme.txt 
+git commit -m "branch test"
+
+
+git checkout master
+
+合并
+git merge dev
+保留痕迹的合并
+git merge --no-ff -m "merged bug fix 101" issue-101
+
+
+git branch -d dev
+
+
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>
+
+创建+切换分支：git checkout -b <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+
+
+可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作：
+$ git stash
+
+工作现场存到哪去了？用git stash list命令看看：
+$ git stash list
+
+
+一是用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除；
+另一种方式是用git stash pop，恢复的同时把stash内容也删了：
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==================================================================
 Quick setup — if you’ve done this kind of thing before
 or	
 HTTPS
